@@ -30,14 +30,14 @@ public class family {
  
  
  
-        // Добавляет ребенка с заданным именем
+        // Добавляет ребенка с заданным именем 
         public void addChild(String childName) {
             Amoeba child = new Amoeba(childName, this);
             myChildren.add(child);
         }
     }
  
-    //Добавляет ребенка по имени родителя
+    //Добавляет ребенка по имени родителя !
     public void addChild(String parentName, String childName) {
         if (myRoot != null) {
             family.addChildHelper(parentName, childName, myRoot);
